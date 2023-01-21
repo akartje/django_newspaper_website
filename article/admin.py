@@ -3,7 +3,7 @@ from .models import Article, Comment
 
 class CommentInline(admin.TabularInline):
 	model = Comment
-	extra = 0
+	extra = 1
 
 class ArticleAdmin(admin.ModelAdmin):
 	inlines = [
